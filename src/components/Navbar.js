@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Layout, Row, Col, Divider, Icon } from 'antd';
+import { Layout, Divider, Icon } from 'antd';
 const { Header } = Layout;
 
 class Navbar extends Component {
