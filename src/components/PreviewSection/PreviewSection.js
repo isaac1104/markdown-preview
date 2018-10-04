@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 class PreviewSection extends Component {
   getMarkdownText() {
-    const rawMarkup = marked(this.props.text, { sanitize: true });
+    const rawMarkup = marked(this.props.text, { sanitize: true, breaks: true });
     return {
       __html: rawMarkup
     };
