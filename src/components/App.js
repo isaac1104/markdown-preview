@@ -11,7 +11,7 @@ class App extends Component {
       layout: {
         padding: '0 24px',
         alignItems: 'center',
-        marginTop: '60px'
+        marginTop: '50px'
       },
       content: {
         padding: 24,
@@ -37,7 +37,7 @@ class App extends Component {
         <Navbar />
         <Layout style={style.layout}>
           <Content style={style.content}>
-            <Row style={style.container}>
+            <Row gutter={16} style={style.container}>
               <Col span={12} style={style.inputSection}>
                 <InputSection />
               </Col>
