@@ -5,12 +5,25 @@ import { Col, Row } from 'antd';
 
 class App extends Component {
   render() {
+    const style = {
+      container: {
+        height: '100vh'
+      },
+      inputSection: {
+        height: '100%'
+      },
+      PreviewSection: {
+        height: '100%',
+        backgroundColor: '#eeeeee'
+      }
+    };
+
     return (
-      <Row>
-        <Col span={12}>
+      <Row style={style.container}>
+        <Col span={12} style={style.inputSection}>
           <InputSection />
         </Col>
-        <Col span={12}>
+        <Col span={12} style={style.PreviewSection}>
           <PreviewSection />
         </Col>
       </Row>
