@@ -10,7 +10,12 @@ class TextInput extends Component {
       }
     };
 
-    return <TextArea style={style.textArea} />
+    return (
+      <TextArea
+        onChange={this.props.handleChange}
+        style={style.textArea}
+      />
+    )
   }
 };
 

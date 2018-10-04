@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import TextInput from './TextInput';
+import { connect } from 'react-redux';
+import { updateTextInput } from '../../actions';
 
-const InputSection = () => <TextInput />
+class InputSection extends Component {
+  handleChange(event) {
+    this.props.updateTextInput(event.target.value);
+  };
 
-export default InputSection;
+  render() {
+    return <TextInput handleChange={this.handleChange.bind(this)} />
+  }
+};
+
+export default connect(null, { updateTextInput })(InputSection);
