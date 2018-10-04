@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Layout, Row, Col } from 'antd';
+import { Layout, Row, Col, Divider, Icon } from 'antd';
 const { Header } = Layout;
 
 class Navbar extends Component {
@@ -10,21 +10,24 @@ class Navbar extends Component {
         backgroundColor: '#202225',
         position: 'fixed',
         width: '100%',
-        zIndex: 1
-      },
-      div: {
+        zIndex: 1,
         marginBottom: '10px',
-        textAlign: 'center'
-      }
+        textAlign: 'center',
+        color: '#ffffff'
+      },
     };
 
     return (
       <Header style={style.navbar}>
-        <Row type='flex' justify='space-between' align='middle'>
-          <Col xs={24} sm={24} md={24} lg={24} xl={24} style={style.div}>
-            <h1>Live Markdown Preview</h1>
-          </Col>
-        </Row>
+        Live Markdown Preview by Isaac Kwon
+        <Divider type='vertical' />
+        <a href='https://github.com/isaac1104'>
+          <Icon type='github' />
+        </a>
+        <Divider type='vertical' />
+        <a href='https://www.linkedin.com/in/isaac-kwon/'>
+          <Icon type='linkedin' />
+        </a>
       </Header>
     );
   }
