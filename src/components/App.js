@@ -11,7 +11,7 @@ class App extends Component {
       layout: {
         padding: '0 24px',
         alignItems: 'center',
-        marginTop: '50px'
+        marginTop: '60px'
       },
       content: {
         padding: 24,
