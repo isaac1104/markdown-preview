@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import InputSection from './InputSection/InputSection';
 import PreviewSection from './PreviewSection/PreviewSection';
 import Navbar from './Navbar';
+import FooterNav from './FooterNav';
 import { Col, Row, Layout } from 'antd';
 const { Content } = Layout;
 
@@ -47,6 +48,7 @@ class App extends Component {
             </Row>
           </Content>
         </Layout>
+        <FooterNav />
       </Layout>
     );
   }
