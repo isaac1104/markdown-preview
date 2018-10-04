@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux'
 
-const PreviewSection = () => {
-  return <h1>Display Markdown Here</h1>;
+class PreviewSection extends Component {
+  render() {
+    return <p>{this.props.text}</p>
+  }
 };
 
-export default PreviewSection;
+function mapStateToProps({ text }) {
+  return {
+    text
+  }
+};
+
+export default connect(mapStateToProps, null)(PreviewSection);
