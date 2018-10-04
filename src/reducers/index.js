@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import textReducer from './text_reducer';
 
 const rootReducer = combineReducers({
-  text: 'hi'
+  text: textReducer
 });
 
 export default rootReducer;
