@@ -14,7 +14,7 @@ class PreviewSection extends Component {
     const style = {
       container: {
         color: '#ffffff',
-        margin: '10px 0  0 20px'
+        margin: '10px 0 0 0'
       }
     };
 
