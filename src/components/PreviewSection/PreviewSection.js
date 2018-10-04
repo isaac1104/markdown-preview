@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
+import marked from 'marked';
+import { connect } from 'react-redux';
 
 class PreviewSection extends Component {
+  getMarkdownText() {
+    const rawMarkup = marked(this.props.text, { sanitize: true });
+    return {
+      __html: rawMarkup
+    };
+  };
+
   render() {
-    return <div style={{ color: '#ffffff' }}>{this.props.text}</div>
+    return <div dangerouslySetInnerHTML={this.getMarkdownText()} style={{ color: '#ffffff' }} />
   }
 };
 
