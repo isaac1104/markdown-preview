@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
 import InputSection from './InputSection/InputSection';
 import PreviewSection from './PreviewSection/PreviewSection';
-import { Col, Row } from 'antd';
+import Navbar from './Navbar';
+import { Col, Row, Layout } from 'antd';
+const { Content } = Layout;
 
 class App extends Component {
   render() {
     const style = {
+      layout: {
+        padding: '0 24px',
+        alignItems: 'center',
+        marginTop: '60px'
+      },
+      content: {
+        padding: 24,
+        margin: 0,
+        height: '90vh',
+        width: '100vw'
+      },
       container: {
-        height: '100vh',
-        overflow: 'hidden'
+        height: '100%'
       },
       inputSection: {
         height: '100%'
@@ -21,14 +33,21 @@ class App extends Component {
     };
 
     return (
-      <Row style={style.container}>
-        <Col span={12} style={style.inputSection}>
-          <InputSection />
-        </Col>
-        <Col span={12} style={style.PreviewSection}>
-          <PreviewSection />
-        </Col>
-      </Row>
+      <Layout>
+        <Navbar />
+        <Layout style={style.layout}>
+          <Content style={style.content}>
+            <Row style={style.container}>
+              <Col span={12} style={style.inputSection}>
+                <InputSection />
+              </Col>
+              <Col span={12} style={style.PreviewSection}>
+                <PreviewSection />
+              </Col>
+            </Row>
+          </Content>
+        </Layout>
+      </Layout>
     );
   }
 }
