@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { updateTextInput } from '../../actions';
 
 class InputSection extends Component {
-  handleChange(event) {
-    this.props.updateTextInput(event.target.value);
+  handleChange({ target }) {
+    this.props.updateTextInput(target.value);
   };
 
   render() {
