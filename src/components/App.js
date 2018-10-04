@@ -7,14 +7,16 @@ class App extends Component {
   render() {
     const style = {
       container: {
-        height: '100vh'
+        height: '100vh',
+        overflow: 'hidden'
       },
       inputSection: {
         height: '100%'
       },
       PreviewSection: {
         height: '100%',
-        backgroundColor: '#36393f'
+        backgroundColor: '#36393f',
+        overflow: 'scroll'
       }
     };
 
