@@ -11,7 +11,14 @@ class PreviewSection extends Component {
   };
 
   render() {
-    return <div dangerouslySetInnerHTML={this.getMarkdownText()} style={{ color: '#ffffff' }} />
+    const style = {
+      container: {
+        color: '#ffffff',
+        margin: '10px 0  0 20px'
+      }
+    };
+
+    return <div dangerouslySetInnerHTML={this.getMarkdownText()} style={style.container} />
   }
 };
 
