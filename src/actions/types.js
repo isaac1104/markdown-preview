@@ -1,0 +1,1 @@
+export const UPDATE_TEXT_INPUT = 'UPDATE_TEXT_INPUT';
