@@ -1,7 +1,6 @@
 import React from 'react';
+import TextInput from './TextInput';
 
-const InputSection = () => {
-  return <h1>Input Text Here</h1>;
-};
+const InputSection = () => <TextInput />
 
 export default InputSection;
