@@ -41,7 +41,7 @@ class App extends Component {
               <Col xs={12} sm={12} md={12} lg={12} xl={12} style={style.inputSection}>
                 <InputSection />
               </Col>
-              <Col xs={12} sm={12} md={12} lg={12} xl={12} style={style.PreviewSection}>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} style={style.PreviewSection} id='preview'>
                 <PreviewSection />
               </Col>
             </Row>
