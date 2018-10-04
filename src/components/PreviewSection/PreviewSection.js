@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 class PreviewSection extends Component {
   render() {
-    return <p>{this.props.text}</p>
+    return <div>{this.props.text}</div>
   }
 };
 
