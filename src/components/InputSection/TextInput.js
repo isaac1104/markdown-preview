@@ -6,7 +6,8 @@ class TextInput extends Component {
   render() {
     const style = {
       textArea: {
-        height: '90vh'
+        height: '100%',
+        backgroundColor: '#eeeeee'
       }
     };
 

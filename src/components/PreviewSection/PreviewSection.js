@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 class PreviewSection extends Component {
   render() {
-    return <div>{this.props.text}</div>
+    return <div style={{ color: '#ffffff' }}>{this.props.text}</div>
   }
 };
 

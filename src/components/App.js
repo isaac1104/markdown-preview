@@ -14,7 +14,7 @@ class App extends Component {
       },
       PreviewSection: {
         height: '100%',
-        backgroundColor: '#eeeeee'
+        backgroundColor: '#36393f'
       }
     };
 
