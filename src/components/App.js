@@ -39,10 +39,10 @@ class App extends Component {
         <Layout style={style.layout}>
           <Content style={style.content}>
             <Row gutter={16} style={style.container}>
-              <Col span={12} style={style.inputSection}>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} style={style.inputSection}>
                 <InputSection />
               </Col>
-              <Col span={12} style={style.PreviewSection}>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12} style={style.PreviewSection}>
                 <PreviewSection />
               </Col>
             </Row>

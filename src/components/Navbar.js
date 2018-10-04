@@ -22,7 +22,7 @@ class Navbar extends Component {
       <Header style={style.navbar}>
         <Row type='flex' justify='space-between' align='middle'>
           <Col xs={24} sm={24} md={24} lg={24} xl={24} style={style.div}>
-            <h1>Markdown Preview</h1>
+            <h1>Live Markdown Preview</h1>
           </Col>
         </Row>
       </Header>
