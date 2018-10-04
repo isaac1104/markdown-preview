@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import InputSection from './InputSection/InputSection';
+import PreviewSection from './PreviewSection/PreviewSection';
 import { Col, Row } from 'antd';
 
 class App extends Component {
@@ -6,10 +8,10 @@ class App extends Component {
     return (
       <Row>
         <Col span={12}>
-          <h1>Text Input</h1>
+          <InputSection />
         </Col>
         <Col span={12}>
-          <h1>Preview</h1>
+          <PreviewSection />
         </Col>
       </Row>
     );
