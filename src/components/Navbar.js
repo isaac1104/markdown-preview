@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Layout, Divider, Icon } from 'antd';
+import { Layout } from 'antd';
 const { Header } = Layout;
 
 class Navbar extends Component {
@@ -19,15 +19,7 @@ class Navbar extends Component {
 
     return (
       <Header style={style.navbar}>
-        Live Markdown Preview by Isaac Kwon
-        <Divider type='vertical' />
-        <a href='https://github.com/isaac1104'>
-          <Icon type='github' />
-        </a>
-        <Divider type='vertical' />
-        <a href='https://www.linkedin.com/in/isaac-kwon/'>
-          <Icon type='linkedin' />
-        </a>
+        <h1>Live Markdown Preview</h1>
       </Header>
     );
   }

@@ -15,6 +15,7 @@ class TextInput extends Component {
       <TextArea
         onChange={this.props.handleChange}
         style={style.textArea}
+        placeholder='Input Text Here'
       />
     )
   }
