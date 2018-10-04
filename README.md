@@ -2,6 +2,8 @@
 
 ## Usage:
 
+Vist the link https://isaac-markdown-preview.herokuapp.com/ or
+
 1. Clone the repo
 2. Go to the directory and run `npm install`
 3. Run `npm run install` 
