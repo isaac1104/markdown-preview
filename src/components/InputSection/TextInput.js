@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Input } from 'antd';
+import { connect } from 'react-redux';
 const { TextArea } = Input;
 
 class TextInput extends Component {
@@ -16,9 +17,16 @@ class TextInput extends Component {
         onChange={this.props.handleChange}
         style={style.textArea}
         placeholder='Input Text Here'
+        defaultValue={this.props.text}
       />
     )
   }
 };
 
-export default TextInput;
+function mapStateToProps({ text }) {
+  return {
+    text
+  }
+};
+
+export default connect(mapStateToProps, null)(TextInput);
