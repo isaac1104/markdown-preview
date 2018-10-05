@@ -13,11 +13,10 @@ const INITIAL_STATE = `
 #### h4
 ##### h5
 ###### h6
-> blockquote
 _italic_
 *emphasis*
 **strong**
-* list
+> blockquote
 `
 
 function textReducer(state = INITIAL_STATE, action) {
