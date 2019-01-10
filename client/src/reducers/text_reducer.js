@@ -1,7 +1,7 @@
 import { UPDATE_TEXT_INPUT } from '../actions/types';
 
 const INITIAL_STATE = `
-# Welcome to Live Markdown Preview!
+# Welcome to Live Markdown Preview
 ---
 ## Start by editing the text!
 ### And see how your markdown will look like
